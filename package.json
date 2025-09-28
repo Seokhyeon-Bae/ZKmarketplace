@@ -1,0 +1,63 @@
+{
+  "name": "zk-marketplace",
+  "version": "1.0.0",
+  "description": "ZK-Marketplace blockchain application with escrow, disputes, and reputation",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:goerli": "hardhat run scripts/deploy-testnet.js --network goerli",
+    "deploy:mainnet": "hardhat run scripts/deploy-testnet.js --network mainnet",
+    "node": "hardhat node",
+    "dev:backend": "cd backend && npm start",
+    "dev:indexer": "cd backend && npm run indexer",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:all": "concurrently \"npm run dev:backend\" \"npm run dev:indexer\" \"npm run dev:frontend\"",
+    "build:frontend": "cd frontend && npm run build",
+    "start:frontend": "cd frontend && npm start",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "setup:db": "psql zk_marketplace < backend/schema.sql",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
+  },
+  "keywords": [
+    "blockchain",
+    "marketplace",
+    "zk",
+    "ethereum",
+    "escrow",
+    "disputes",
+    "reputation",
+    "defi"
+  ],
+  "author": "ZK Marketplace Team",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "concurrently": "^8.2.2",
+    "eslint": "^8.0.0",
+    "hardhat": "^2.26.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0",
+    "dotenv": "^17.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/zk-marketplace.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/zk-marketplace/issues"
+  },
+  "homepage": "https://github.com/your-org/zk-marketplace#readme"
+}
