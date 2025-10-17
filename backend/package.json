@@ -1,0 +1,28 @@
+{
+  "name": "zk-marketplace-backend",
+  "version": "1.0.0",
+  "description": "ZK Marketplace Backend API and Indexer",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "indexer": "node indexer.js",
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["blockchain", "marketplace", "api", "indexer"],
+  "author": "ZK Marketplace Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "pg": "^8.11.3",
+    "ethers": "^6.8.1",
+    "ws": "^8.14.2",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
+
