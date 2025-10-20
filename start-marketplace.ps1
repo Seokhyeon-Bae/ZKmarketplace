@@ -26,3 +26,7 @@ Write-Host ""
 Write-Host "🌐 The marketplace will be available at: http://localhost:3000" -ForegroundColor Green
 Write-Host "📊 API will be available at: http://localhost:3001" -ForegroundColor Green
 
+
+
+
+

@@ -573,3 +573,5 @@ The ZK Marketplace is a full-stack decentralized application with:
 - **Complete deployment** pipeline
 
 Everything is connected and working together to create a secure, transparent, and efficient marketplace! 🎉
+
+
